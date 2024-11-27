@@ -39,10 +39,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav align-items-center mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link mx-2" href="index.html"><i class="fas fa-plus-circle pe-2"></i>Home</a>
+                                <a class="nav-link mx-2" href="home.php"><i class="fas fa-plus-circle pe-2"></i>Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-2" href="carrinho.html"><i class="fas fa-heart pe-2"></i>Carrinho</a>
+                                <a class="nav-link mx-2" href="carrinho.php"><i class="fas fa-heart pe-2"></i>Carrinho</a>
                             </li>
                         </ul>
                     </div>
@@ -57,23 +57,23 @@
         <div class="row">
             <div class="col-6 text-center" style="margin-top: 200px;">
                 <img src="imgs/2.png" alt="">
-            </div>
-
-            <div class="col-6" style="margin-top: 200px;">
-                <h4>T-SHIRT SUFGANG KML BLACK</h4>
-                <h5>R$199,99</h5>
-                <p class="text-muted">Nova Modelagem <br>
-                    • CAMISETA CLASS "CLS WEAPONS" <br>
-                    • SILK <br>
-                    • 100% ALGODÃO <br>
-                    • FEITO NO BRASIL <br>
-                </p>
-
-                <a href="carrinho.html">
-                    <button type="button" class="btn btn-dark mt-4" data-mdb-ripple-init>Adicionar ao carrinho</button> <!--colocar aqui função de adicionar-->
-                </a>
-            </div>
+            </div> 
         </div>
+
+        <form action="../controller/funcao-create.php" method="post" enctype="multipart/form-data">
+
+            <input type="text" class="form-control" name="campo_nome" value="T-SHIRT SUFGANG KML BLACK" >
+
+            <input type="text" class="form-control" name="campo_item" value="2.png">
+
+            <input type="hideen" class="form-control" name="campo_preco" value="R$199,90">
+   
+            <div class="container mt-5 d-flex justify-content-end">  
+                <a href="carrinho.php">
+                    <input type="submit" value="Salvar" class="btn btn-dark">
+                </a>  
+            </div>    
+        </form>
     </div>
 
 
